@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #060606;
+  --text-color: #fff;
+}
+
+/* Increase specificity for dark-mode */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.dark-mode {
+  --bg-color: black;
+  --text-color: #fffbfb;
+}
+
+/* Increase specificity for light-mode */
+.light-mode {
+  --bg-color: #f3f0ff; /* Light mode background color */
+  --text-color: #333333; /* Light mode text color */
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    max-width: 1200px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body {
+    max-width: 768px;
+  }
+
+  .navlist > li {
+    font-size: 250% !important;
+    color: #ffaa05;
+  }
+}
+
+.navlist > li,
+.project-list > li {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.navlist > li:hover,
+.navlist > li:visited {
+  border-bottom: 1px solid #ffaa05;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(60, 60, 60, 0.597);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.project-list > li {
+  padding: 4px 12px;
+}
+.project-list > li:hover,
+.project-list > li:visited {
+  background-color: #ffaa05;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.project-list > li:active {
+  opacity: 0.7;
+}
+button {
+  font-size: 1.8rem;
+}
+.text-container {
+  overflow: hidden;
+}
+.text-container span {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+.text-container h2 {
+  color: #ffaa05 !important; /* Color for both h2 elements */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-container span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.text-container span:nth-child(2) {
+  animation-delay: 0.5ms;
+}
+form input,
+form textarea {
+  background: none;
+  border: 2px solid #ead6b9;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 30px;
+  width: 500px;
+}
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #ffaa05;
+  border: 2px solid #ffaa05;
+}
+form textarea {
+  height: 400px;
+}
+
+/* Mobile media query */
+@media only screen and (max-width: 480px) {
+  * {
+    font-size: 50%;
+  }
+  body {
+    max-width: 380px;
+  }
+  .logo {
+    font-size: 40%;
+  }
+  form input,
+  form textarea {
+    width: 370px;
+    padding: 2px 5px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  form textarea {
+    height: 200px;
+  }
+}
+
+/* Add more rules for additional words if needed */
+
+/* /*
+
+Color : #FFAA05, #fffbfb
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
+*/
+
+/* */
