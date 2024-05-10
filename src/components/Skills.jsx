@@ -7,7 +7,7 @@ function Skills() {
     {
       head: 'Diploma in Science.',
       paragraph:
-        'Gratudated on Osun State Polytechnic, Iree as a Diploma of Computer Science.',
+        'Gratudated on Osun State Polytechnic, Iree with a Diploma of Computer Science.',
     },
     {
       head: 'Specializing in React & Vanilla Js.',
