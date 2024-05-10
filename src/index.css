@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 70%;
 }
 body {
   background-color: var(--bg-color);
@@ -43,14 +43,14 @@ body {
   }
 
   .navlist > li {
-    font-size: 250% !important;
+    font-size: 300% !important;
     color: #ffaa05;
   }
 }
 
 .navlist > li,
 .project-list > li {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   cursor: pointer;
 }
 .navlist > li:hover,
@@ -134,7 +134,7 @@ form textarea {
 /* Mobile media query */
 @media only screen and (max-width: 480px) {
   * {
-    font-size: 50%;
+    font-size: 60%;
   }
   body {
     max-width: 380px;
