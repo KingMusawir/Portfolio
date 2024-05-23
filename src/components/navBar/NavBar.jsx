@@ -39,7 +39,6 @@ function NavBar() {
       />
 
       {showModal && <Navigation />}
-      {/*  <ShowModal closeModal={closeModal} /> */}
     </div>
   );
 }
