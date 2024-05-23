@@ -16,21 +16,19 @@
   font-size: 70%;
 }
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
   max-width: 1300px;
   margin: 0 auto;
 }
-.dark-mode {
-  --bg-color: black;
-  --text-color: #fffbfb;
+body.light {
+  background-color: white;
+  color: black;
 }
 
-/* Increase specificity for light-mode */
-.light-mode {
-  --bg-color: #f3f0ff; /* Light mode background color */
-  --text-color: #333333; /* Light mode text color */
+body.dark {
+  background-color: black;
+  color: white;
 }
+/* Increase specificity for light-mode */
 
 @media only screen and (max-width: 1300px) {
   body {

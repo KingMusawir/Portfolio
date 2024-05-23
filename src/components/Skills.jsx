@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Myself from '../assets/myself.png';
 import Textcontainer from './Textcontainer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 function Skills() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration in milliseconds
+      easing: 'ease', // Easing function for animations
+      once: false, // Whether animations should only happen once
+    });
+  }, []);
   const mySkills = [
     {
       head: 'Diploma in Science.',
@@ -22,7 +31,7 @@ function Skills() {
   ];
   return (
     <>
-      <div className='text-center mt-60' id='aboutme'>
+      <div className='text-center mt-60' id='aboutme' data-aos='fade-up'>
         <p className='text-[3.8rem] md:text-[4.8rem]'>
           {'Problem Solver <coder>'}
         </p>
@@ -30,7 +39,7 @@ function Skills() {
           Frontend Developer with over 2 years of experience
         </p>
       </div>
-      <div className=' border-b-2 border-[#b1b1b1] mb-60'>
+      <div className=' border-b-2 border-[#b1b1b1] mb-60' data-aos='fade-up'>
         <div className=' pt-24 flex justify-center max-w-[1100px] mx-auto items-center'>
           <div className=''>
             {mySkills.map((skill, index) => (
@@ -46,7 +55,7 @@ function Skills() {
             ))}
           </div>
           <div className='hidden md:block'>
-            <img src={Myself} alt='Developer Photo' />
+            <img src={Myself} alt='My Look' />
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { NavContext } from '../contexts/NavContext';
 
 function ListItem({ to, label, onClick }) {
   return (
-    <li>
+    <li className='my-2 lg:my-0'>
       <ScrollLink
         activeClass='active'
         to={to}
@@ -19,7 +20,8 @@ function ListItem({ to, label, onClick }) {
   );
 }
 
-function List({ listMobile, closeModal, scrollToTop }) {
+function List({ listMobile }) {
+  const { scrollToTop, closeModal } = useContext(NavContext);
   const links = [
     { to: '/', label: 'Home' },
     { to: 'aboutme', label: 'About me' },
@@ -33,9 +35,11 @@ function List({ listMobile, closeModal, scrollToTop }) {
 
   return (
     <ul
-      className={`flex gap-12 ${
-        listMobile ? 'flex-col text-[2.4rem]' : 'flex-row'
-      } navlist`}
+      className={` navlist   ${
+        listMobile
+          ? ' flex flex-col text-2xl'
+          : 'hidden lg:flex lg:flex-row lg:gap-12'
+      } `}
     >
       {links.map((link, index) => (
         <ListItem

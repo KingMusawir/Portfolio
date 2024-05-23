@@ -1,5 +1,4 @@
 import React from 'react';
-import { SiFreecodecamp } from 'react-icons/si';
 import { BsFillFileEarmarkCodeFill } from 'react-icons/bs';
 
 function Logo() {
