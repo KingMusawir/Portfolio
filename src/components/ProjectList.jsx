@@ -62,7 +62,7 @@ function Project() {
     {
       image: Blues,
       programs: 'React App · Tailwind · CSS · SCSS',
-      link: 'https://www.google.com/',
+      link: 'https://blues-blue.vercel.app/',
       type: 'Real Estate Website',
       subhead:
         'This React application empowers users to effortlessly explore an extensive range of rental properties, streamlining the search for their ideal home.',
@@ -73,6 +73,7 @@ function Project() {
       type: 'E-Commerce Website',
       subhead:
         'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency.',
+      link: 'https://www.google.com/',
     },
     {
       image: Selenia,
@@ -80,6 +81,7 @@ function Project() {
       type: 'Cryptocurrency Website',
       subhead:
         'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
+      link: 'https://www.google.com/',
     },
   ];
 
