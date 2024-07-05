@@ -14,9 +14,9 @@ function Skills() {
   }, []);
   const mySkills = [
     {
-      head: 'Diploma in Science.',
+      head: 'Bsc. Computer Science - (In-view)',
       paragraph:
-        'Gratudated on Osun State Polytechnic, Iree with a Diploma of Computer Science.',
+        'Currently pursuing a Bachelor of Science in Computer Science at the Federal University of Technology Akure (FUTA). Previously graduated from Osun State Polytechnic with a strong foundation in computer science.',
     },
     {
       head: 'Specializing in React & Vanilla Js.',
