@@ -46,6 +46,8 @@ function Project() {
       type: 'Real Estate Website',
       subhead:
         'This React application empowers users to effortlessly explore an extensive range of rental properties, streamlining the search for their ideal home.',
+
+      github: 'https://github.com/KingMusawir/blues',
     },
     {
       image: Hucsters,
@@ -69,6 +71,7 @@ function Project() {
       type: 'Location Tracking App',
       subhead:
         'This React application allows users to keep records of the locations they visit. Users must log in to access the app, ensuring secure and personalized tracking. By clicking "Get Position," users can automatically retrieve their current location, add a note about the place, and save it for future reference. Currently, the application is designed to be tested on localhost, as there is no backend yet.',
+      github: 'https://github.com/KingMusawir/worldVisitation',
     },
     {
       image: Pizza,
@@ -77,6 +80,7 @@ function Project() {
       subhead:
         'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency. The Pizza App is a mini application built with React and Redux Toolkit. Users can order pizzas, adjust quantities, and remove unwanted items from their cart. They can also set delivery priority and choose payment on delivery. Experience a streamlined and efficient ordering process designed to enhance user satisfaction.',
       link: 'https://pizza-cyan-ten.vercel.app/',
+      github: 'https://github.com/KingMusawir/pizza',
     },
     {
       image: Selenia,
@@ -113,12 +117,14 @@ function Project() {
           <div className=' pt-4 flex items-center gap-4'>
             <a
               href={project.link}
+              target='_blank'
               className=' transition-all duration-[400ms] ease-in-out p-2  rounded-2xl text-[1.4rem] border-2 border-secondary hover:bg-secondary '
             >
               See Live
             </a>
             <a
               href={project.github}
+              target='_blank'
               className=' transition-all duration-[400ms] ease-in-out text-[1.4rem] border-b-2 border-secondary hover:text-secondary'
             >
               See on GitHub
