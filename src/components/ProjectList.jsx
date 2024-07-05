@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Blues from '../assets/blues.png';
 import Hucsters from '../assets/hucksters.png';
 import Selenia from '../assets/selenia.png';
+import Worldwise from '../assets/worldwise.png';
+import Pizza from '../assets/Pizza.png';
 
 function ProjectList({ setProject }) {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -40,28 +42,6 @@ function Project() {
     {
       image: Blues,
       programs: 'React App · Tailwind · CSS · SCSS',
-      link: 'https://www.google.com/',
-      type: 'Real Estate Website',
-      subhead:
-        'This React application empowers users to effortlessly explore an extensive range of rental properties, streamlining the search for their ideal home.',
-    },
-    {
-      image: Hucsters,
-      programs: 'React App · Tailwind · CSS ',
-      type: 'E-Commerce Website',
-      subhead:
-        'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency.',
-    },
-    {
-      image: Selenia,
-      programs: 'React App · Tailwind · CSS · SCSS',
-      type: 'Cryptocurrency Website',
-      subhead:
-        'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
-    },
-    {
-      image: Blues,
-      programs: 'React App · Tailwind · CSS · SCSS',
       link: 'https://blues-blue.vercel.app/',
       type: 'Real Estate Website',
       subhead:
@@ -73,7 +53,30 @@ function Project() {
       type: 'E-Commerce Website',
       subhead:
         'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency.',
-      link: 'https://www.google.com/',
+      github: 'https://github.com/HuckstersEngineering/huckstersweb',
+    },
+    {
+      image: Selenia,
+      programs: 'React App · Tailwind · CSS · SCSS',
+      type: 'Cryptocurrency Website',
+      subhead:
+        'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
+    },
+    {
+      image: Worldwise,
+      programs: 'React App · Tailwind · CSS · SCSS',
+      link: 'https://world-visitation.vercel.app/',
+      type: 'Location Tracking App',
+      subhead:
+        'This React application allows users to keep records of the locations they visit. Users must log in to access the app, ensuring secure and personalized tracking. By clicking "Get Position," users can automatically retrieve their current location, add a note about the place, and save it for future reference. Currently, the application is designed to be tested on localhost, as there is no backend yet.',
+    },
+    {
+      image: Pizza,
+      programs: 'React App · Tailwind · CSS ',
+      type: 'Mini Pizza App',
+      subhead:
+        'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency. The Pizza App is a mini application built with React and Redux Toolkit. Users can order pizzas, adjust quantities, and remove unwanted items from their cart. They can also set delivery priority and choose payment on delivery. Experience a streamlined and efficient ordering process designed to enhance user satisfaction.',
+      link: 'https://pizza-cyan-ten.vercel.app/',
     },
     {
       image: Selenia,
