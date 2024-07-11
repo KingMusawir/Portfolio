@@ -63,6 +63,7 @@ function Project() {
       type: 'Cryptocurrency Website',
       subhead:
         'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
+      link: 'https://selenia-jade.vercel.app/',
     },
     {
       image: Worldwise,
@@ -88,7 +89,7 @@ function Project() {
       type: 'Cryptocurrency Website',
       subhead:
         'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
-      link: 'https://www.google.com/',
+      link: 'https://selenia-jade.vercel.app/',
     },
   ];
 
