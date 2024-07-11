@@ -15,7 +15,7 @@ function Hero() {
       <div className='pt-40 text-center flex items-center justify-center flex-col gap-4 md:gap-6'>
         <Intro />
         <Textcontainer
-          text='Proficient in React and Tailwind CSS, I leverage innovative approaches
+          text='Proficient in ReactJs and Tailwind CSS, I leverage innovative approaches
           to build compelling web applications.'
           speed={100}
           specialWords={specialWords}
