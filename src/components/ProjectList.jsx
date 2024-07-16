@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Blues from '../assets/blues.png';
 import Hucsters from '../assets/hucksters.png';
 import Selenia from '../assets/selenia.png';
 import Worldwise from '../assets/worldwise.png';
 import Pizza from '../assets/Pizza.png';
+import Wild from '../assets/the-wild-oasis.png';
 
 function ProjectList({ setProject }) {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -40,8 +41,18 @@ function ProjectList({ setProject }) {
 function Project() {
   const projects = [
     {
+      image: Wild,
+      programs: 'React JS · StyledCSS · CSS · SCSS',
+      link: 'https://the-wild-oasis-three-phi.vercel.app/',
+      type: 'Hotel Management App',
+      subhead:
+        'This app is designed specifically for hotel employees to manage daily operations efficiently, including handling bookings, managing cabins, and storing guest information.',
+
+      github: 'https://github.com/KingMusawir/the-wild-oasis',
+    },
+    {
       image: Blues,
-      programs: 'React App · Tailwind · CSS · SCSS',
+      programs: 'React JS · Tailwind · CSS · SCSS',
       link: 'https://blues-blue.vercel.app/',
       type: 'Real Estate Website',
       subhead:
@@ -51,7 +62,7 @@ function Project() {
     },
     {
       image: Hucsters,
-      programs: 'React App · Tailwind · CSS ',
+      programs: 'React JS · Tailwind · CSS ',
       type: 'E-Commerce Website',
       subhead:
         'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency.',
@@ -59,7 +70,7 @@ function Project() {
     },
     {
       image: Selenia,
-      programs: 'React App · Tailwind · CSS · SCSS',
+      programs: 'React JS · Tailwind · CSS · SCSS',
       type: 'Cryptocurrency Website',
       subhead:
         'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
@@ -67,7 +78,7 @@ function Project() {
     },
     {
       image: Worldwise,
-      programs: 'React App · Tailwind · CSS · SCSS',
+      programs: 'React JS · Tailwind · CSS · SCSS',
       link: 'https://world-visitation.vercel.app/',
       type: 'Location Tracking App',
       subhead:
@@ -76,20 +87,12 @@ function Project() {
     },
     {
       image: Pizza,
-      programs: 'React App · Tailwind · CSS ',
+      programs: 'React JS · Tailwind · CSS ',
       type: 'Mini Pizza App',
       subhead:
         'Seamlessly Manage User Accounts and Empower Vendors, Redefining the E-commerce Landscape With Intuitive Functionality and Dynamic Features for Enhanced Engagement and Efficiency. The Pizza App is a mini application built with React and Redux Toolkit. Users can order pizzas, adjust quantities, and remove unwanted items from their cart. They can also set delivery priority and choose payment on delivery. Experience a streamlined and efficient ordering process designed to enhance user satisfaction.',
       link: 'https://pizza-cyan-ten.vercel.app/',
       github: 'https://github.com/KingMusawir/pizza',
-    },
-    {
-      image: Selenia,
-      programs: 'React App · Tailwind · CSS · SCSS',
-      type: 'Cryptocurrency Website',
-      subhead:
-        'React Website for Accessing Live Prices of All Cryptocurrencies and Discover the Selenia Crypto App, Your Ultimate Companion for Staying Informed and Making Informed Investment Decisions.',
-      link: 'https://selenia-jade.vercel.app/',
     },
   ];
 
@@ -153,7 +156,7 @@ function ProjectContainer() {
   return (
     <div>
       <ProjectList setProject={setSelectedProject} />
-      <div className='projects'>{selectedProject && <Project key={1} />}</div>
+      <div className='projects'>{selectedProject && <Project />}</div>
     </div>
   );
 }

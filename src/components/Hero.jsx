@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import FilePath from '../assets/resume.pdf';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Textcontainer from './Textcontainer';
 import Intro from './Intro';
@@ -23,7 +24,16 @@ function Hero() {
         />
 
         <div className='flex items-center gap-8 font-semibold '>
-          <Button bg={true}>See my Dev work</Button>
+          <ScrollLink
+            activeClass='active'
+            to='portfolio'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            <Button bg={true}>See my Dev work</Button>
+          </ScrollLink>
 
           <Button>
             <a
