@@ -54,9 +54,6 @@ function Skills() {
               </div>
             ))}
           </div>
-          <div className='hidden md:block'>
-            <img src={Myself} alt='My Look' />
-          </div>
         </div>
       </div>
     </>

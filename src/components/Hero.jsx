@@ -7,6 +7,7 @@ import Textcontainer from './Textcontainer';
 import Intro from './Intro';
 import Button from './Button';
 import KeyMouse from './KeyMouse';
+import Profile from './Profile';
 
 function Hero() {
   const specialWords = ['React', 'Tailwind', 'web'];
@@ -14,6 +15,7 @@ function Hero() {
   return (
     <div>
       <div className='pt-40 text-center flex items-center justify-center flex-col gap-4 md:gap-6'>
+        <Profile />
         <Intro />
         <Textcontainer
           text='Proficient in ReactJs and Tailwind CSS, I leverage innovative approaches
