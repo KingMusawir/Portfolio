@@ -36,7 +36,7 @@ function Skills() {
           {'Problem Solver <coder>'}
         </p>
         <p className='text-[1.2rem] md:text-[1.8rem] text-[#b1b1b1]'>
-          Frontend Developer with over 2 years of experience
+          Frontend Developer with over 3 years of experience
         </p>
       </div>
       <div className=' border-b-2 border-[#b1b1b1] mb-60' data-aos='fade-up'>
